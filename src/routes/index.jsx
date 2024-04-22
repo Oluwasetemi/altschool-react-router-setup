@@ -13,7 +13,7 @@ const AppRouter = () => (
     <Route index path="/" exact element={<Home />} />
     <Route path="/items" exact element={<Items />}>
       {/* items/new  */}
-      <Route path="/new" exact element={<NewItem />} />
+      <Route path="items/new" exact element={<NewItem />} />
       {/* items/delete  */}
       {/* <Route path='delete' element={<DeleteItem />} /> */}
       {/* items/123456  itemId = 123456 */}
