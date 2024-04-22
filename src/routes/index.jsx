@@ -10,14 +10,14 @@ let NewItem = lazy(() => import('../pages/NewItem'));
 
 const AppRouter = () => (
   <Routes>
-    <Route index path="/" exact element={<Home />} />
-    <Route path="/items" exact element={<Items />}>
+    <Route path="/" element={<Home />} />
+    <Route path="/items" element={<Items />}>
       {/* items/new  */}
-      <Route path="items/new" exact element={<NewItem />} />
+      <Route path="/items/new" element={<NewItem />} />
       {/* items/delete  */}
       {/* <Route path='delete' element={<DeleteItem />} /> */}
       {/* items/123456  itemId = 123456 */}
-      <Route path=":itemId" exact element={<Item />} />
+      <Route path=":itemId" element={<Item />} />
       {/* <Route index element={<LeagueStandings />} /> */}
     </Route>
     <Route path="/about" element={<About />} />
