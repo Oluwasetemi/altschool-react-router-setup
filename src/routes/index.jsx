@@ -21,7 +21,7 @@ const AppRouter = () => (
       {/* <Route index element={<LeagueStandings />} /> */}
     </Route>
     <Route path="/about" element={<About />} />
-    <Route path="*" element={<ErrorPage />} />
+    {/* <Route path="*" element={<ErrorPage />} /> */}
   </Routes>
 );
 
